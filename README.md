@@ -93,7 +93,7 @@ external_components:
 dcf77_emitter:
   time_id: sntp_time  # Reference to the time component
   antenna_pin: GPIO18  # ANTENNAPIN - DCF77 signal output
-  led_pin: GPIO2  # LEDBUILTIN - Visual indication of signal
+  led_pin: GPIO2  # LEDBUILTIN - Visual indication of signal (built-in LED on most ESP32 dev boards)
   sync_switch_id: dcf77_sync_switch  # Reference to the control switch
 
 # Switch to control DCF77 signal output
@@ -161,7 +161,7 @@ This repository also includes a standalone Arduino implementation with scheduled
   - One end connects to PIN 18 (ANTENNAPIN) through a 1kΩ resistor
   - Other end connects to GND
   - This creates the magnetic field that radio clocks detect
-- **LED** on pin 2 for visual pulse indication (optional)  
+- **LED** on pin 2 for visual pulse indication (GPIO2 is the built-in LED on most ESP32 dev boards)  
 - **Arduino IDE** or **PlatformIO** (or another environment supporting ESP32)
 
 ### Setup Instructions
