@@ -119,6 +119,7 @@ switch:
 
 ### Requirements for ESPHome
 
+- **ESPHome Version**: Successfully tested with ESPHome version 2024.10.2
 - **WiFi Connection**: Required for both SNTP synchronization and Home Assistant integration
 - **SNTP Time**: Mandatory for accurate DCF77 signal generation
 - **ESP32 Device**: Works best with ESP32 due to precise timing requirements
