@@ -1,3 +1,4 @@
+[![Ask DeepWiki](https://deepwiki.com/badge.svg)](https://deepwiki.com/sst1xx/radio_cron_dcf77)
 # DCF77 Transmitter for ESP32 and ESPHome Component
 
 This repository contains an **ESP32-based** project that **transmits a DCF77 time signal** in two forms: as an **ESPHome external component** for Home Assistant integration, and as a standalone Arduino sketch with scheduled sync windows and deep sleep. The ESPHome component provides a switch-controlled DCF77 signal generator that can be automated through Home Assistant. The Arduino version connects to multiple WiFi networks for up to **20 minutes** upon startup, synchronizes time with an **NTP server**, and supports **deep sleep** outside defined sync windows.
