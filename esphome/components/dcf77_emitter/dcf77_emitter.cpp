@@ -3,10 +3,11 @@
 #include "esphome/core/hal.h"
 #include "esphome/core/application.h"
 
-// ==== ESP-IDF includes ====
+// Use these for ESP32-C6 (ESP-IDF)
+#include "esp_system.h"
 #include "esp_timer.h"
-#include "esp_rom/esp_rom_sys.h"
 #include "driver/ledc.h"
+#include "esp_log.h"
 
 namespace esphome {
 namespace dcf77_emitter {
