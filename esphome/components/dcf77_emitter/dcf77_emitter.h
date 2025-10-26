@@ -62,7 +62,7 @@ class DCF77Emitter : public Component {
   volatile int last_second_ = -1;
 
   // === Control and state ===
-  uint8_t pwm_channel_ = 0;
+  ledc_channel_t pwm_channel_ = LEDC_CHANNEL_0;
   uint32_t last_status_log_ = 0;
   uint32_t sync_start_millis_ = 0;
   bool is_initialized_ = false;
