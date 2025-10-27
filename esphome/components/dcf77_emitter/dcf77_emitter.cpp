@@ -49,7 +49,7 @@ void DCF77Emitter::setup() {
       .duty_resolution = LEDC_TIMER_8_BIT,
       .timer_num = LEDC_TIMER_0,
       .freq_hz = 77500,
-      .clk_cfg = PLL_80M_CLK};
+      .clk_cfg = LEDC_USE_APB_CLK};
   ledc_timer_config(&ledc_timer);
 
   ledc_channel_config_t ledc_channel = {
