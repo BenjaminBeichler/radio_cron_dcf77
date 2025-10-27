@@ -96,9 +96,10 @@ void DCF77Emitter::loop() {
 
   if (!this->is_initialized_) {
     auto current_time = this->time_id_->now();
-    if (!current_time.is_valid())
+    if (!current_time.is_valid()){
+      ESP_LOGD(TAG, "time is not valid, leave loop");
       return;
-
+    }
     if (current_time.second != this->last_second_) {
       ESP_LOGI(TAG, "Second transition detected after %u ms",
                millis() - this->sync_start_millis_);
