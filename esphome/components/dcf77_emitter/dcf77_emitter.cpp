@@ -38,7 +38,7 @@ void DCF77Emitter::setup_timer_() {
 // -----------------------------------------------------------------------------
 void DCF77Emitter::setup() {
   ESP_LOGCONFIG(TAG, "Setting up DCF77 Emitter...");
-
+  ESP_LOGI(TAG, "!!!!!!!!!!!!!!!!!!!!!!!!!!tesT!!!!!!!!!!!!!!!!!!!!!!!");
   this->led_pin_->setup();
   this->led_pin_->digital_write(false);
   this->antenna_pin_->setup();
